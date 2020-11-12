@@ -1,0 +1,7 @@
+\begin{tabular}{l cc | cc} \hline  & \multicolumn{2}{c|}{Any Location} & \multicolumn{2}{c}{Crash Location } \\  & \multicolumn{2}{c|}{Captured by} & \multicolumn{2}{c}{Determined by} \\  & \multicolumn{2}{c|}{Algorithm Close to} & \multicolumn{2}{c}{Algorithm Close to} \\  & \multicolumn{2}{c|}{True Crash Location} & \multicolumn{2}{c}{True Crash Location} \\  \hline  & Recall & Precision & Recall & Precision \\ \hline LNEx & 0.674  & 0.686  & 0.129  & 0.132  \\ Alg., Raw Gaz & 0.695  & 0.757  & 0.579  & 0.756  \\ Alg., Aug Gaz & 0.798  & 0.857  & 0.651  & 0.811  \\ Alg., Aug Gaz [Cluster] &  & & 0.656  & 0.774  \\ \hline \multicolumn{5}{p{11cm}}{`N Crashes' refers to the number of correctly 
+    identified crashes. `Raw Gaz' refers to the raw gazetteer (ie, dictionary of 
+    landmarks with original names) and `Aug Gaz' refers to the augmented gazetteer. 
+    We use our raw gazetteer as an input into LNEX, which implements its own augmentation
+    process. For LNEx, the crash location is determined by taking the centroid of all 
+    locations captured by the algorithm. Locations are considered close if they are 
+    within 500 meters of each other.} \end{tabular} 
